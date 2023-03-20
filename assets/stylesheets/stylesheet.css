@@ -1,0 +1,313 @@
+/*fonts*/
+@font-face {
+    font-family: 'gardena_regular';
+    src: url('fonts/gardena-webfont.woff2') format('woff2'),
+        url('fonts/gardena-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'michella_gardenregular';
+    src: url('fonts/michella_garden-webfont.woff2') format('woff2'),
+        url('fonts/michella_garden-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'homegarden_sansregular';
+    src: url('fonts/homegarden_sans-webfont.woff2') format('woff2'),
+        url('fonts/homegarden_sans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'default_sansregular';
+    src: url('fonts/defaultsans-regular-webfont.woff2') format('woff2'),
+        url('fonts/defaultsans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gardenscregular';
+    src: url('fonts/gardensc_03_1-webfont.woff2') format('woff2'),
+        url('fonts/gardensc_03_1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*-------*/
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/body.jpg');
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.image {
+    width: 40vmax;
+
+}
+
+.flex {
+    display: flex;
+}
+
+/*Header*/
+header {
+    width: 100%;
+    height: 30vmax;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/header_bg.jpg");
+    /*https://fr.best-wallpaper.net/Garden-green-bushes-clouds-flowers_wallpapers.html*/
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    z-index: 9999;
+    box-shadow: 0px 5px 5px black;
+}
+
+#logo {
+    width: 40vmax;
+}
+
+header .bottom {
+    width: 100%;
+    display: flex;
+    align-self: flex-end;
+}
+
+/*Navbar*/
+navbar {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    width: 100%;
+    height: 3vmax;
+    gap: 20px;
+    font-size: .9vmax;
+    background-color: rgba(0, 0, 0, .50);
+    font-family: 'default_sansregular';
+    color: white;
+    z-index: 99999;
+    transition: all .5s;
+}
+.navFixed {
+    position: fixed;
+    top: 0;
+}
+navbar p {
+    text-align: center;
+}
+
+navbar a {
+    width: 33%;
+    transition: all .3s;
+    -webkit-text-stroke: #5e924c .4px;
+
+}
+
+a:hover {
+
+    color: #63a545;
+    font-weight: bold;
+    font-size: 1.05vmax;
+    transition: all .3s;
+}
+
+navbar:hover {
+    background-color: rgba(0, 0, 0, .90);
+    transition: all .5s;
+}
+
+/*-------*/
+
+/*Main*/
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'gardenscregular';
+    font-size: 2vmax;
+    width: 80%;
+    padding: 20px;
+    color: #009059
+}
+
+h2 {
+    font-family: 'gardenscregular';
+    padding: 20px;
+    font-size: 3vmax;
+    text-align: center;
+
+
+}
+
+.bloc {
+    margin: 0, auto;
+    padding: 5%;
+    background-color: rgba(0, 0, 0, .70);
+
+}
+
+.imgBloc {
+    width: 100%;
+    height: 40vmax;
+    border-radius: 2%;
+   cursor: pointer;
+}
+
+.imgGlob{
+    width: 50vmax;
+    margin-bottom: 5%;
+    position: relative; 
+}
+.onFocusFalse {
+    display: none !important;
+}
+.bx-zoom-in {
+    
+    font-size: 7vmax;
+}
+.imgHover {
+    background-color: rgba(0, 0, 0, .70) ;
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s;
+
+    
+}
+.imgHover:hover {
+    opacity: 1;
+    transition: .5s;
+    
+}
+.align-center {
+    align-self: center;
+}
+.bx-zoom-in {
+   
+    color: #009059;
+    cursor: pointer;
+}
+.imageZoom {
+    position: absolute;
+    top:0;
+}
+.top {
+    top : 35%;
+}
+.bx-zoom-in:hover {
+    color: whitesmoke;
+    transition: .5s;
+}
+.bloctext {
+    width: 60%;
+}
+
+.bloctext hr {
+    width: 60%;
+
+}
+
+.bloctext p {
+    margin-left: 10%;
+    font-family: 'gardenscregular';
+    font-size: 2.5vmax;
+    color: whitesmoke;
+}
+
+
+
+/*scroll event*/
+.reveal {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s cubic-bezier(.5, 0, 0, 1);
+}
+
+/*-------*/
+
+/*overlay image*/
+.blocOverlay {
+    width: 100%;
+    height: 100vmax;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, .70);
+    z-index: 99999;
+    opacity: 0;
+}
+
+.overlay-off {
+    display: none;
+}
+
+.bx-x {
+    color: #172b02;
+    font-size: 5vmax;
+    cursor: pointer;
+    transition: .5s;
+
+
+}
+
+.bx-x:hover {
+    color: white;
+    z-index: 1000;
+
+    transition: .5s;
+}
+
+.imgOverlay {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 50vmax;
+    height: 40vmax;
+}
+
+.top-overlay {
+    width: 50vmax;
+    height: 100px;
+    background-color: #2c4223;
+    display: flex;
+    justify-content: end;
+  
+}
+
+.blocContent {
+    width: 100%;
+    position: fixed;
+    left: 25%;
+    top: 5%;
+    filter: drop-shadow(0 0 0.75rem #2c4223);
+}
+
+/*-------*/
