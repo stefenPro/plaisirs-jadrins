@@ -143,10 +143,11 @@ main {
 
 h1 {
     font-family: 'gardenscregular';
-    font-size: 2vmax;
-    width: 80%;
+    font-size: 3.5vmax;
     padding: 20px;
-    color: #009059
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 10vmax;
 }
 
 h2 {
@@ -167,13 +168,13 @@ h2 {
 
 .imgBloc {
     width: 100%;
-    height: 40vmax;
+    height: 50vmax;
     border-radius: 2%;
    cursor: pointer;
 }
 
 .imgGlob{
-    width: 50vmax;
+    width: 50%;
     margin-bottom: 5%;
     position: relative; 
 }
@@ -224,21 +225,24 @@ h2 {
     transition: .5s;
 }
 .bloctext {
-    width: 60%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .bloctext hr {
-    width: 60%;
+    width: 40%;
+    
 
 }
 
 .bloctext p {
-    margin-left: 10%;
     font-family: 'gardenscregular';
     font-size: 2.5vmax;
     color: whitesmoke;
+    text-align: center;
 }
-
 
 
 /*scroll event*/
