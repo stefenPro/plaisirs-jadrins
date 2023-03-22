@@ -60,12 +60,11 @@ const navbar = document.querySelector('navbar')
 const navbarPos = navbar.offsetTop
 window.addEventListener('scroll', function(){
     if (window.scrollY > navbarPos){
-        console.log(window.scrollY+' true')
         navbar.classList.add('navFixed')
+        navbar.classList.add('navbarScroll')
     }else if (window.scrollY < navbarPos){
-        console.log(window.scrollY+' fasle')
-            navbar.classList.remove('navFixed')
-       
+        navbar.classList.remove('navFixed')
+        navbar.classList.remove('navbarScroll')
     }
     
 })
