@@ -165,11 +165,20 @@ a:hover {
     bottom: 0;
     right: 0;
     z-index: 999;
+    cursor: pointer;
+}
+.pageBottom a:hover{
+    color: none;
+    font-weight: none;
+    font-size: none;
+
+    
 }
 .bxs-home-alt-2:hover, .bxs-message-dots:hover {
     color: #2c4223;
+    font-size : 3em;
     transition: all .5s;
-    cursor: pointer;
+    
     
     
 }
@@ -444,6 +453,51 @@ h2 {
     top: 5%;
     filter: drop-shadow(0 0 0.75rem #2c4223);
 }
+/*SLIDER ENTRETIENT*/
+slider {
+    display: flex;
+}
+.container {
+    
+    margin: 0 auto;
+}
+slider img {
+    width: 50vmax;
+    height: 40vmax;
+    border: 1px solid #aed5a8;
+    margin: 0 auto;
+    display: none;
+}
+img.active {
+    display: block;
+    animation: fade 0.8s;
+}
+.cont-btn {
+    display: flex;
+    font-size: 5vmax;
+    color : #aed5a8;
+    justify-content: center;
+    
+}
+.btn-nav {
+    cursor: pointer;
+    transition: all .5s;
+    
+}
+.btn-nav:hover {
+    color: #5e924c !important;
+    transition: all .5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/*-------*/
 
 @media screen and (max-width : 534px) {
     .imgOverlay {
