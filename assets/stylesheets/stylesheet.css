@@ -489,7 +489,7 @@ slider img {
 .btn-nav {
     cursor: pointer;
     transition: all .5s;
-    
+    align-self: center;
 }
 .btn-nav:hover {
     color: #5e924c !important;
@@ -499,7 +499,7 @@ slider img {
     color: whitesmoke;
     text-align: center;
     font-family: 'gardenscregular';
-    font-size: 3em;
+    font-size: 2em;
 }
 .important {
     font-weight: bold;
