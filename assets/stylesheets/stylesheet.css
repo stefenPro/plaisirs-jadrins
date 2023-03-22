@@ -458,11 +458,13 @@ slider {
     display: flex;
     justify-content: center;
 }
+slider .imgGlob {
+    margin: 0;
+}
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
+    
 }
 slider img {
     width: 100%;
@@ -493,7 +495,18 @@ slider img {
     color: #5e924c !important;
     transition: all .5s;
 }
-
+.maintains p {
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'gardenscregular';
+    font-size: 3em;
+}
+.important {
+    font-weight: bold;
+}
+.maintains h2 {
+    margin-bottom: 0;
+}
 @keyframes fade {
     from {
         opacity: 0;
