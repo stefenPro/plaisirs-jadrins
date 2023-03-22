@@ -71,7 +71,7 @@ window.addEventListener('scroll', function(){
 /*-------*/
 
 /*DIAPO*/
-const items = document.querySelectorAll('.diap')
+const items = document.querySelectorAll('.slide')
 const nbSlides = items.length
 const after = document.querySelector('.right')
 const before = document.querySelector('.left')
