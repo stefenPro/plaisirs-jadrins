@@ -55,9 +55,12 @@ images.forEach(function (image){
     
 })
 
-/*Scroll Navbar*/
+/*Scroll Navbar | footer*/
 const navbar = document.querySelector('navbar')
+const tools = document.querySelector('.pageBottom')
 const navbarPos = navbar.offsetTop
+const toolsPos = tools.offsetTop
+console.log(toolsPos )
 window.addEventListener('scroll', function(){
     if (window.scrollY > navbarPos){
         navbar.classList.add('navFixed')
@@ -66,6 +69,13 @@ window.addEventListener('scroll', function(){
         navbar.classList.remove('navFixed')
         navbar.classList.remove('navbarScroll')
     }
+    if ((window.innerHeight + window.scrollY) <= toolsPos) {
+        tools.classList.add('pageBottomFixed')
+    }else{
+        tools.classList.remove('pageBottomFixed')
+    }
+        
+    
     
 })
 /*-------*/
