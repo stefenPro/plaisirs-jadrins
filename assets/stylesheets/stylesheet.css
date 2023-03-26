@@ -582,6 +582,9 @@ footer a:hover p{
         height: 
         25vmax;
     }
+    .logo {
+        width: 38vmax;
+    }
 }
 
 /*-------*/
